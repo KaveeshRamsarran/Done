@@ -33,6 +33,14 @@ class DoneApp {
 
     this.root.innerHTML = `
       <div class="app-shell">
+        <div class="ios-status" aria-hidden="true">
+          <span>9:41</span>
+          <span class="status-cluster">
+            <span class="signal-bars"><i></i><i></i><i></i></span>
+            <span class="wifi-mark"></span>
+            <span class="battery-mark"></span>
+          </span>
+        </div>
         <nav class="top-bar" aria-label="App actions">
           ${isCreate
             ? `<button class="icon-button" type="button" data-action="back" aria-label="Back">${icon("back")}</button>`
